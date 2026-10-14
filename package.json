@@ -1,0 +1,30 @@
+{
+  "name": "arc-to-solana-cctp",
+  "version": "1.0.0",
+  "description": "Minimalistic example of Circle CCTP transfer from Arc testnet to Solana",
+  "type": "module",
+  "main": "src/index.ts",
+  "scripts": {
+    "bridge": "tsx src/index.ts",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "format": "prettier --write .",
+    "format:check": "prettier --check .",
+    "typecheck": "tsc --noEmit"
+  },
+  "dependencies": {
+    "@circle-fin/adapter-viem-v2": "^1.19.0",
+    "@circle-fin/bridge-kit": "^1.15.2",
+    "dotenv": "^18.0.7",
+    "viem": "^2.57.4"
+  },
+  "devDependencies": {
+    "@eslint/js": "^9.22.0",
+    "@types/node": "^22.13.9",
+    "eslint": "^9.22.0",
+    "prettier": "^3.9.10",
+    "tsx": "^4.23.15",
+    "typescript": "^5.8.2",
+    "typescript-eslint": "^8.71.1"
+  }
+}
